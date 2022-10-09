@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="Nixbees" charset="utf-8">
+    <title>Nixbees</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="hero">
+      <nav class="stroke navbar">
+        <img src="images/menu.png" class="menu-img">
+        <img src="images/logo.png" class="logo">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li>
+            <a href="#">Products</a>
+            <ul class="dropdown">
+              <li><a class="dropdown-item" href="productlist.html"> AC/DC </a></li>
+			        <li><a class="dropdown-item" href="productlist.html"> Battens </a></li>
+			        <li><a class="dropdown-item" href="productlist.html"> Bulbs </a></li>
+            </ul>
+          </li>
+          <li><a href="#about_us">About Us</a></li>
+          <li><a href="contactus.html">Contact</a></li>
+        </ul>
+        <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+      </nav>
+
+      <div class="lamp-container">
+        <img src="images/lamp.png" class="lamp">
+        <img src="images/light.png" class="light" id="light">
+      </div>
+
+      <div class="text-container">
+        <h1>Latest <br>in Lighting</h1>
+        <p>This is the first lamp from our company. we're making a huge
+        collection of modern Lamps in all categories from home use to office
+        use.</p>
+        <a href="https://lightings.nixbees.com/#/"> Check All Collections </a>
+
+        <!--<div class="control">
+          <p>04</p>
+          <div class="line"><span></span></div>
+          <p>05</p>
+        </div>
+      -->
+
+      </div>
+    </div>
+
+    <div class="container" id="about_us">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 style="text-align: center; color: #2E2E2E;">About Us</h2>
+        </div>
+        <br>
+        <br>
+        <div class="col-md-12">
+          <p style="text-align: justify; color: #2E2E2E;">Welcome to the most premier techno dexterous, emerging, promising and fast growing firm originated with the passion of offering the best in class solutions and services to our esteemed customers. We at nixbees are offering a wide spectrum of IT related services and solutions helping our customers to be their best at what they do so that they gain a challenging edge and stay ahead in their game. How we achieve them!! Well, the techniques we ,use developed with extensive industry exposure experience and in-depth understanding of technologies and business process. The impact of our perfectly orchestrated solutions with the client-driven approach is the key to supporting the development and growth of the business of our clients. Our solutions are made to carve the future of the business. We consider each and every assignment with utmost care for careful scrutiny of ideation and validate them with proper business process and techniques and accommodate clients with full range of services to develop tailor-made solutions which cater to their needs and help them to stay ahead of the curve. Come join hands with us for your next big idea so that we can deliver the brainchild of your dreams.</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var btn = document.getElementById("btn");
+      var light = document.getElementById("light");
+
+      function toggleBtn(){
+        btn.classList.toggle("active");
+        light.classList.toggle("on")
+      }
+    </script>
+  </body>
+</html>

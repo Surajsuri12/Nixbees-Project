@@ -1,0 +1,67 @@
+body {
+  font-family: 'Nunito', sans-serif;
+	height: 90vh;
+	color: #fff;
+	background: #1d2026;
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+.product-h {
+  margin-top: 30px;
+}
+
+.products{
+  padding: 20px;
+  padding-top: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.products .product {
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  height: 380px;
+  text-align: left;
+  display: inline-block;
+  background-color: rgba(0,0,0,0.1);
+  border: 1px solid rgba(0,0,0,0.1);
+  margin: 20px;
+  padding: 20px;
+}
+
+.products .product img {
+  position: relative;
+  top: -5px;
+  margin: auto;
+  transition: all .2s ease;
+  width: 100%;
+  -webkit-clip-path: polygon(0 100%, 0 0, 100% 0, 100% 70%);
+          clip-path: polygon(0 100%, 0 0, 100% 0, 100% 70%);
+}
+.products .product img:hover {
+  -webkit-clip-path: polygon(0 100%, 0 0, 100% 0, 100% 100%);
+          clip-path: polygon(0 100%, 0 0, 100% 0, 100% 100%);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.products .product h1 {
+  line-height: 20px;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.products .product .price {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 25px;
+  color: darkblue;
+  background: lightblue;
+  border: 1px solid blue;
+  border-radius: 10px;
+  padding: 10px;
+}
